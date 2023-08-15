@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="programs">
+        <item>Bsccsit</item>
+        <item>BCA</item>
+        <item>BBA</item>
+        <item>BIT</item>
+        <item>BHM</item>
+
+    </string-array>
+</resources>

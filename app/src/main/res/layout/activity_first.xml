@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student form"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtForm"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtForm"
+        android:layout_margin="5dp"
+        android:hint="Enter Student ID"
+        android:id="@+id/edtId"
+
+        />
+    <EditText
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtId"
+        android:layout_margin="5dp"
+        android:hint="Enter student name"
+        android:id="@+id/edtName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/txtGender"
+        android:layout_below="@+id/edtName"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="5dp"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGender"
+        android:id="@+id/radGroup"
+        android:orentation="horizontal"
+        android:layout_toRightOf="@+id/txtGender">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/radMale"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radFemale"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Program"
+        android:textSize="18sp"
+        android:layout_below="@id/radGroup"
+        android:layout_margin="5dp"
+        android:id="@+id/textProgram"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/programs"
+        android:layout_below="@id/radGroup"
+        android:layout_toRightOf="@id/textProgram"
+        android:layout_marginTop="5dp"
+        android:id="@+id/spProgram"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textProgram"
+    android:text="submit"
+    android:id="@+id/btnSubmit"
+    android:layout_centerHorizontal="true"
+    android:forceHasOverlappingRendering="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="18sp"
+        android:id="@+id/txtResult"
+        android:layout_below="@id/btnSubmit"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
